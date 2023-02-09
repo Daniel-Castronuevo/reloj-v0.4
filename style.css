@@ -1,0 +1,373 @@
+/* - - - - - - - - MI TEMA - - - - - - - - */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(81, 30, 30);
+    overflow: hidden;
+}
+/* - - - - - - - - TUS COSAS - - - - - - - - */
+
+
+.presentacion{
+    margin: 2em;
+    width: 230px;
+    position: absolute;
+    z-index: 150;
+    font-family: 'Quicksand', sans-serif;
+    color: #d8d8d8;
+    left: -16em;
+    user-select: none;
+}
+
+.presentacion p{
+    font-size:1.5em;
+}
+
+.presentacion a{
+    position: relative;
+    top: 0.5em;
+    padding: 7px 15px;
+    border-radius: 1em;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    background: rgba(255, 255, 255, 0.113);
+    color: #000;
+    text-decoration: none;
+}
+
+.presentacion a:hover{
+    background: rgba(255, 255, 255, 0.467);
+    transition: 250ms;
+}
+
+.move-1{
+    transition-timing-function: ease-out;
+    transition: 1.5s;
+    transform: translate(10.5em);
+}
+.move-2{
+    transform: translate(7.8em);
+}
+.move-3{
+    left: 13em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background: rgb(81, 30, 30);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bracelet{
+    margin-top: 3em;
+    height: 500px;
+    width: 80px;
+    background: rgb(26, 26, 26);
+    border-right: 2px solid rgb(32, 32, 32);
+    border-left: 2px solid rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 1em 1em;
+    position: relative;
+    box-shadow: 0 0 0.2em #000;
+}
+
+.bracelet-bright{
+    height: 98%;
+    width: 80%;
+    background: rgb(29, 29, 29);
+    border-right: 2px solid rgb(32, 32, 32);
+    border-left: 2px solid rgb(22, 22, 22);
+    border-radius: 0 0 1em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.bracelet-holes{
+    width: 20px;
+    height: 7px;
+    border-radius: 1em;
+    background: rgb(57, 21, 21);
+    margin: 7px;
+    border-left: 2px solid rgb(35, 35, 35);
+    border-right: 2px solid rgb(20, 20, 20);
+}
+
+.bracelet-holes:last-child{
+    margin-bottom: 2em;
+}
+
+.clock-base{
+    width: 120px;
+    height: 130px;
+    background: rgb(21, 21, 21);
+    position: absolute;
+    border-radius: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mount{
+    width:7px;
+    height: 150px;
+    background: rgb(21, 21, 21);
+    position: absolute;
+    margin-bottom: 3em;
+}
+
+.mount-1{
+    margin-left: 5.6em;
+    border-radius: 0 3px 3px 0;
+}
+
+.mount-2{
+    margin-right: 5.6em;
+    border-radius:  3px 0 0 3px ;
+}
+
+.space-in{
+    width: 90px;
+    height: 133px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    margin-bottom: 3em;
+    box-shadow: 0 0 0.5em #000;
+}
+
+.clock-glass{
+    width: 97%;
+    height: 97%;
+    border-radius: 1.5em;
+    background: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-screen{
+    width: 80%;
+    height: 70%;
+    background: #060606;
+}
+
+.buckle-box{
+    width: 88px;
+    height: 45px;
+    position: absolute;
+    margin-bottom: 33em;
+    border: 5px solid rgb(21, 21, 21);
+    border-top: 10px solid rgb(21, 21, 21);
+    border-bottom: none;
+    box-shadow: 0 -1px 0.1em #000;
+}
+
+.buckle{
+    width: 15px;
+    height: 32px;
+    position: absolute;
+    background: rgb(18, 18, 18);
+    margin-bottom: 33.3em;
+    border: 2px solid rgb(81, 30, 30);
+    border-bottom: none;
+}
+
+.bracelet-lock{
+    width: 90px;
+    height: 20px;
+    position: absolute;
+    margin-bottom: 27em;
+    background: rgb(25, 25, 25);
+    border-right: 2px solid rgb(30, 30, 30);
+    border-left: 2px solid rgb(15, 15, 15);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(0, 0, 0,0.5);
+}
+
+.button{
+    position: absolute;
+    height: 40px;
+    width: 5px;
+    background: rgb(25, 25, 25);
+    margin-left: 9.4em;
+    border: none;
+    border-radius: 0 1em 1em 0;
+    border-right: 3px solid #151515;
+}
+
+
+
+
+
+/* - - - - - - - - - - - SCREEN - - - - - - - - - - - */
+
+.screen-upper-bar{
+    width: 100%;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    overflow: hidden;
+}
+
+.screen-upper-bar p{
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: .5em;
+}
+
+.screen-upper-bar i{
+    color: rgb(217, 196, 109);
+}
+
+.screen-data{
+    padding: 3px 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    font-size: 0.6em;
+    font-family: 'Quicksand', sans-serif;
+    align-items: center;
+    color: #fff;
+    grid-gap: 3px;
+}
+
+.screen-data i{
+    margin-right: 5px;
+}
+
+.fa-shoe-prints{
+    transform: rotate(-90deg);
+    color: rgb(71, 71, 228);
+}
+
+.fa-heart-pulse{
+    color: rgb(253, 24, 24);
+}
+
+.fa-fire-flame-curved{
+    color: rgb(255, 94, 0);
+}
+
+.fa-location-dot{
+    color: rgb(29, 216, 29);
+}
+
+.screen-clock{
+    width: 100%;
+    height: 37px;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+    font-weight: lighter;
+}
+
+.hora{
+    position: relative;
+    bottom:0.2em;
+    width: 45%;
+    text-align: center;
+    font-size: 2em;
+    align-items: center;
+    right: .1em;
+}
+
+.separator{
+    position: relative;
+    bottom:0.3em;
+    right: 0.12em;
+    width: 5%;
+    text-align: center;
+    font-size: 2em;
+    align-items: center;
+}
+
+.min{
+    position: relative;
+    bottom:0.2em;
+    width: 45%;
+    text-align: center;
+    font-size: 2em;
+    align-items: center;
+    right: .1em;
+}
+
+.seg{
+    position: absolute;
+    margin-top: 2.17em;
+    margin-left: 8.5em;
+    font-size: 0.6em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    position: absolute;
+    width: 100%;
+    background: rgb(18, 18, 18);
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 1em #000;
+    user-select: none;
+}
+
+footer img{
+    transform: scale(0.7);
+}
